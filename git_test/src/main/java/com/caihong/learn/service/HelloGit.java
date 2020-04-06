@@ -44,4 +44,11 @@ public class HelloGit {
         System.out.println(a - b);
     }
 
+    public  int factorial(int a){
+        if (a==1) {
+            return 1;
+        }
+        return factorial(a-1)*a;
+    }
+
 }
