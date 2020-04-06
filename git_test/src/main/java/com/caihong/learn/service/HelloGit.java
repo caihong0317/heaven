@@ -11,15 +11,16 @@ public class HelloGit {
 
     /**
      * 删除文件
+     *
      * @param srcFile 待删除文件
      */
-    public static void deleteFile(File srcFile){
+    public static void deleteFile(File srcFile) {
         if (srcFile.isFile()) {
             boolean delete = srcFile.delete();
         } else {
             File[] listFiles = srcFile.listFiles();
             //不是空目录
-            if (listFiles.length>0) {
+            if (listFiles.length > 0) {
                 for (File file : listFiles) {
                     if (file.isFile()) {
                         file.delete();
@@ -28,21 +29,19 @@ public class HelloGit {
                     }
                     file.delete();
                 }
-            }else {
+            } else {
                 //删除空目录
                 srcFile.delete();
             }
         }
     }
 
-    public  void add(int a, int b){
-        System.out.println(a +b);
+    public void add(int a, int b) {
+        System.out.println(a + b);
     }
-    public  int factorial(int a){
-        if (a==1) {
-            return 1;
-        }
-        return factorial(a-1)*a;
+
+    public void substract(int a, int b) {
+        System.out.println(a - b);
     }
 
 }
