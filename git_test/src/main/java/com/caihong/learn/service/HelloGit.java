@@ -36,12 +36,16 @@ public class HelloGit {
         }
     }
 
-    public void add(int a, int b) {
-        System.out.println(a + b);
+    public int add(int a, int b) {
+        return (a + b);
     }
 
     public void substract(int a, int b) {
         System.out.println(a - b);
+    }
+
+    public int devision(int a , int b){
+        return a/b;
     }
 
     public  int factorial(int a){
