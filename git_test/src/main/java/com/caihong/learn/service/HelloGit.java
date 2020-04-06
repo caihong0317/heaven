@@ -38,4 +38,11 @@ public class HelloGit {
     public  void add(int a, int b){
         System.out.println(a +b);
     }
+    public  int factorial(int a){
+        if (a==1) {
+            return 1;
+        }
+        return factorial(a-1)*a;
+    }
+
 }
